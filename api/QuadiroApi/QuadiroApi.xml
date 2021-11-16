@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QuadiroApi</name>
+    </assembly>
+    <members>
+        <member name="T:QuadiroApi.Controllers.AuthenticationController">
+             <summary>
+             </summary>
+        </member>
+        <member name="M:QuadiroApi.Controllers.AuthenticationController.#ctor(QuadiroApi.Repositories.Interfaces.IAuthenticationRepository)">
+             <summary>
+             </summary>
+             <param name="iAuthenticationRepository"></param>
+        </member>
+        <member name="M:QuadiroApi.Controllers.AuthenticationController.Authenticate(QuadiroApi.Entities.AuthenticationModel)">
+             <summary>
+             </summary>
+             <param name="authenticationModel"></param>
+             <returns></returns>
+        </member>
+        <member name="M:QuadiroApi.Controllers.AuthenticationController.OtpVerify(QuadiroApi.Entities.UserOtpModel)">
+             <summary>
+             </summary>
+             <param name="userOtpModel"></param>
+             <returns></returns>
+        </member>
+        <member name="T:QuadiroApi.Controllers.ProductController">
+             <summary>
+             </summary>
+        </member>
+        <member name="M:QuadiroApi.Controllers.ProductController.#ctor(QuadiroApi.Repositories.Interfaces.IProductRepository)">
+             <summary>
+             </summary>
+             <param name="iProductRepository"></param>
+        </member>
+        <member name="M:QuadiroApi.Controllers.ProductController.Get">
+             <summary>
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="T:QuadiroApi.LambdaEntryPoint">
+             <summary>
+             This class extends from APIGatewayProxyFunction which contains the method FunctionHandlerAsync which is the
+             actual Lambda function entry point. The Lambda handler field should be set to
+
+             QuadiroApi::QuadiroApi.LambdaEntryPoint::FunctionHandlerAsync
+             </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:QuadiroApi.LambdaEntryPoint.Init(Microsoft.AspNetCore.Hosting.IWebHostBuilder)" -->
+        <member name="M:QuadiroApi.LambdaEntryPoint.Init(Microsoft.Extensions.Hosting.IHostBuilder)">
+             <summary>
+             Use this override to customize the services registered with the IHostBuilder.
+
+             It is recommended not to call ConfigureWebHostDefaults to configure the IWebHostBuilder inside this method.
+             Instead customize the IWebHostBuilder in the Init(IWebHostBuilder) overload.
+             </summary>
+             <param name="builder"></param>
+        </member>
+        <member name="T:QuadiroApi.LocalEntryPoint">
+            <summary>
+            The Main function can be used to run the ASP.NET Core application locally using the Kestrel webserver.
+            </summary>
+        </member>
+    </members>
+</doc>

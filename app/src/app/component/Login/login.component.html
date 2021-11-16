@@ -1,0 +1,33 @@
+<div class="container login-page" *ngIf="isLogin">
+    <div class="login-col">
+        <div class="login-hedar">
+            <h4>Welcome</h4>
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Enter Email" [(ngModel)]="model.user_name">
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" placeholder="Enter Password" [(ngModel)]="model.user_password"
+                (keyup)="onLoginKeyUp($event)">
+        </div>
+
+        <div class="mb-3">
+            <input type="text" class="form-control" maxlength="15" placeholder="Enter mobile no here"
+                [(ngModel)]="model.user_mobileno" (keypress)="global.isMobileNumberKey($event)">
+        </div>
+        <button type="submit" class="btn btn-primary login-row-btn mt-2" (click)="onSubmit()">Login</button>
+    </div>
+</div>
+
+<div class="container login-page" *ngIf="isOtp">
+    <div class="login-col">
+        <div class="login-hedar">
+            <h4>Please enter One time password send on your mobile</h4>
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" maxlength="5" placeholder="Enter one time password here"
+                [(ngModel)]="model.otp" (keyup)="onOtpKeyUp($event)" (keypress)="global.isNumberKey($event)">
+        </div>
+        <button type="submit" class="btn btn-primary login-row-btn mt-2" (click)="otpVerify()">Submit</button>
+    </div>
+</div>

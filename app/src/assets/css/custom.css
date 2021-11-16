@@ -1,0 +1,101 @@
+.login-page { 
+    top: 50%; 
+    left: 50%; 
+    background-color: #fff; 
+    box-shadow: 0px 9px 138px 8px rgb(83 29 171 / 10%), 0px 26px 106px rgb(83 29 171 / 10%); 
+    max-width: 400px !important; 
+    width: 90% !important; 
+    padding: 40px; 
+    position: absolute; 
+    transform: translate(-50%, -50%); 
+}
+
+.login-row-btn { 
+    color: #fff; 
+    background-color: #531DAB !important; 
+    border-color: #531DAB !important;
+    width: 370px;
+}
+
+.login-hedar h4 { 
+    text-align: center !important; 
+    margin-bottom: 30px !important; 
+    font-size: 24px; 
+}
+
+.form-control:focus { 
+    box-shadow: none  !important; 
+    border:1px solid #D9D9D9; 
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:hover { 
+    background-color: #531DAB !important; 
+    border-color: #531DAB !important; 
+    box-shadow: none !important; 
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.card-product:after { 
+    content: ""; 
+    display: table; 
+    clear: both; 
+    visibility: hidden; 
+} 
+.card-product .price-new, .card-product .price { 
+    margin-right: 5px; 
+}
+.card-product .price-old { 
+    color: #999; 
+} 
+.card-product .img-wrap { 
+    border-radius: 3px 3px 0 0; 
+    overflow: hidden; 
+    position: relative; 
+    height: 220px; 
+    margin: 30px 20px;
+    text-align: center; 
+}
+.card-product .img-wrap img { 
+    max-height: 100%; 
+    max-width: 100%; 
+    width: 220px;
+    height: 220px;
+    object-fit: cover; 
+}
+.card-product .info-wrap { 
+    overflow: hidden; 
+    padding: 15px; 
+    border-top: 1px solid #eee; 
+}
+.card-product .action-wrap { 
+    padding-top: 4px; 
+    margin-top: 4px; 
+} 
+.card-product .bottom-wrap { 
+    padding: 15px; 
+    border-top: 1px solid #eee; 
+} 
+.card-product .title { 
+    margin-top: 0; 
+    height: 60px;
+    max-height: 60px;
+    overflow: hidden;
+}
+figure.card.card-product {
+    max-height: 400px;
+    height: 400px;
+}
+span.price-new > span {
+    font-size: 14px;
+    text-transform: capitalize;
+    color: gray;
+}

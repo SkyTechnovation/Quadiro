@@ -1,0 +1,55 @@
+<div class="menu-container">
+    <div class="menu">
+        <ul class="clearfix">
+            <li class="drop_menu menu_link"><a>Products</a>
+                <ul class="item_list">
+                    <li>
+                        Products
+                        <ul>
+                            <li *ngFor="let product of products">
+                                <div class="menu_prouct">
+                                    <div class="p_img">
+                                        <img [src]="product.product_image" alt="">
+                                    </div>
+                                    <div class="p_details">
+                                        <h5>{{product.product_name}}</h5>
+                                        <span class="price-new">{{ product.product_quantity }}<span
+                                                style="font-size: 11px;">
+                                                quantity
+                                            </span>
+                                        </span>
+                                        <p>${{product.product_price}}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu_link" (click)="logOut()" style="cursor: pointer !important;"><a>Log out</a></li>
+        </ul>
+    </div>
+</div>
+<div style="padding: 20px;">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let product of products">
+            <figure class="card card-product">
+                <div class="img-wrap">
+                    <img [src]="product.product_image">
+                </div>
+                <figcaption class="info-wrap">
+                    <h6 class="title text-dots"><a>{{ product.product_name }}</a></h6>
+                    <div class="action-wrap">
+                        <div class="price-wrap h5">
+                            <span class="price-new">{{ product.product_quantity }}<span>
+                                    quantity
+                                </span>
+                            </span>
+                            <span class="price-new" style="float: right;">${{ product.product_price }}</span>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</div>
